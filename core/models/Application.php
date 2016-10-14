@@ -14,6 +14,10 @@ require_once 'Autoload.php';
 
 use future\core\models\Content;
 
+/**
+ * Class Application
+ * @package future\core
+ */
 class Application
 {
 	public $content;

@@ -8,6 +8,9 @@
  * @copyright Future CMF
  */
 
+/**
+ * Class Autoload
+ */
 class Autoload
 {
 	protected $namespacesMap = [];
