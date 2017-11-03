@@ -16,7 +16,7 @@ use future\core\models\Content;
 
 /**
  * Class Application
- * @package future\core
+ * @package future\vendor
  */
 class Application
 {

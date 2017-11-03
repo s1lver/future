@@ -6,6 +6,6 @@
  * @copyright Future CMF
  */
 
-require_once 'core/models/Application.php';
+require_once 'vendor/models/Application.php';
 
 (new future\core\Application);

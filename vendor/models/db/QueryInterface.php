@@ -8,7 +8,7 @@ namespace future\core\models\db;
 
 /**
  * Interface QueryInterface
- * @package future\core\models\db
+ * @package future\vendor\models\db
  */
 interface QueryInterface
 {
