@@ -4,11 +4,11 @@
  * @link   github.com/s1lver
  */
 
-namespace future\core\models\db;
+namespace future\models\db;
 
 /**
  * Interface QueryInterface
- * @package future\vendor\models\db
+ * @package future\models\db
  */
 interface QueryInterface
 {

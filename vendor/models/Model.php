@@ -6,7 +6,11 @@
  * @copyright Future CMF
  */
 
-namespace future\core;
+namespace future\models;
 
+/**
+ * Class Model
+ * @package future\models
+ */
 class Model
 {}
