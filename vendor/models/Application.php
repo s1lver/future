@@ -23,11 +23,7 @@ class Application
 	/**
 	 * Application constructor.
 	 */
-<<<<<<< HEAD:core/models/Application.php
 	public function __construct()
-=======
-	function __construct()
->>>>>>> aab371d3fe3dc42ae5a7dbea6a571e6012c19c8c:vendor/models/Application.php
 	{
 		$this->autoloadInit();
 
