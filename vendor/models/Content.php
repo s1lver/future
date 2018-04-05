@@ -8,8 +8,12 @@
  * @copyright Future CMF
  */
 
-namespace future\core\models;
+namespace future\models;
 
+/**
+ * Class Content
+ * @package future\models
+ */
 class Content
 {
 }

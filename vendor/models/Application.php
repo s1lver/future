@@ -8,15 +8,13 @@
  * @copyright Future CMF
  */
 
-namespace future\core;
+namespace future\models;
 
 require_once 'Autoload.php';
 
-use future\core\models\Content;
-
 /**
  * Class Application
- * @package future\core
+ * @package future\models
  */
 class Application
 {
@@ -25,7 +23,11 @@ class Application
 	/**
 	 * Application constructor.
 	 */
+<<<<<<< HEAD:core/models/Application.php
 	public function __construct()
+=======
+	function __construct()
+>>>>>>> aab371d3fe3dc42ae5a7dbea6a571e6012c19c8c:vendor/models/Application.php
 	{
 		$this->autoloadInit();
 
