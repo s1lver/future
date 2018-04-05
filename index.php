@@ -8,4 +8,4 @@
 
 require_once 'core/models/Application.php';
 
-(new future\core\Application);
+new future\core\Application;

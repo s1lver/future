@@ -22,7 +22,10 @@ class Application
 {
 	public $content;
 
-	function __construct()
+	/**
+	 * Application constructor.
+	 */
+	public function __construct()
 	{
 		$this->autoloadInit();
 

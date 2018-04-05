@@ -58,8 +58,9 @@ class Autoload
 		if (is_array($pathParts)) {
 			$className = array_pop($pathParts);
 
-			if (isset($className)) {
+			if (null !== $className) {
 				$filePath = $this->namespacesMap[$this->namespace].'/'.$className.'.php';
+				/** @noinspection PhpIncludeInspection */
 				require_once $filePath;
 
 				return true;
