@@ -36,7 +36,7 @@ class Application
 	/**
 	 * Функция инициализации автозагрузки классов
 	 */
-	private function autoloadInit()
+	private function autoloadInit(): void
 	{
 		$autoload = new Autoload();
 		$autoload->add(__NAMESPACE__, __DIR__);
