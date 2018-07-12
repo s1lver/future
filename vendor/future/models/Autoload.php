@@ -60,12 +60,7 @@ class Autoload
 			array_shift($pathParts);
 			$filePath = $this->namespacesMap[$this->namespace].DIRECTORY_SEPARATOR.implode(DIRECTORY_SEPARATOR, $pathParts).'.php';
 
-<<<<<<< HEAD:vendor/future/models/Autoload.php
 			if (file_exists($filePath)) {
-=======
-			if (null !== $className) {
-				$filePath = $this->namespacesMap[$this->namespace].'/'.$className.'.php';
->>>>>>> dffd9dd8258868486f4d0bb3cfea0b5719a25782:vendor/models/Autoload.php
 				/** @noinspection PhpIncludeInspection */
 				require_once $filePath;
 			}
