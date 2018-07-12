@@ -12,6 +12,7 @@ namespace future\models;
 
 /**
  * Class Autoload
+ * @package future\models
  */
 class Autoload
 {

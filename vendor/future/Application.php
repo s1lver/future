@@ -17,7 +17,7 @@ require_once 'models/Autoload.php';
 
 /**
  * Class Application
- * @package future\models
+ * @package future
  */
 class Application
 {
