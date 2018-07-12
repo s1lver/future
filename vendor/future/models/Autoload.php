@@ -8,6 +8,8 @@
  * @copyright Future CMF
  */
 
+namespace future\models;
+
 /**
  * Class Autoload
  */
@@ -19,8 +21,8 @@ class Autoload
 	/**
 	 * Функция добавления пространств имен
 	 *
-	 * @param string $namespace	 Пространство имен
-	 * @param string $rootDir	 Корневая директория
+	 * @param string $namespace Пространство имен
+	 * @param string $rootDir Корневая директория
 	 *
 	 * @return bool
 	 */
@@ -48,7 +50,6 @@ class Autoload
 	 * Функция автозагрузки классов на основе пространства имен
 	 *
 	 * @param string $class
-	 *
 	 * @return bool
 	 */
 	protected function autoloadNamespace($class)
@@ -56,14 +57,12 @@ class Autoload
 		$pathParts = explode('\\', $class);
 
 		if (is_array($pathParts)) {
-			$className = array_pop($pathParts);
+			array_shift($pathParts);
+			$filePath = $this->namespacesMap[$this->namespace].DIRECTORY_SEPARATOR.implode(DIRECTORY_SEPARATOR, $pathParts).'.php';
 
-			if (isset($className)) {
-				$filePath = $this->namespacesMap[$this->namespace].'/'.$className.'.php';
+			if (file_exists($filePath)) {
 				/** @noinspection PhpIncludeInspection */
 				require_once $filePath;
-
-				return true;
 			}
 		}
 

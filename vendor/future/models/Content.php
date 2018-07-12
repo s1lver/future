@@ -15,5 +15,4 @@ namespace future\models;
  * @package future\models
  */
 class Content
-{
-}
+{}

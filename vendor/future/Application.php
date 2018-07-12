@@ -8,9 +8,12 @@
  * @copyright Future CMF
  */
 
-namespace future\models;
+namespace future;
 
-require_once 'Autoload.php';
+use future\models\Autoload;
+use future\models\Content;
+
+require_once 'models/Autoload.php';
 
 /**
  * Class Application
@@ -35,8 +38,8 @@ class Application
 	 */
 	private function autoloadInit()
 	{
-		$autoload = new \Autoload();
-		$autoload->add('models', __DIR__);
+		$autoload = new Autoload();
+		$autoload->add(__NAMESPACE__, __DIR__);
 		$autoload->register();
 	}
 }
