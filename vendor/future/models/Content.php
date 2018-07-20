@@ -14,5 +14,18 @@ namespace future\models;
  * Class Content
  * @package future\models
  */
-class Content
-{}
+class Content extends Model
+{
+	/**
+	 * Content constructor.
+	 */
+	public function __construct()
+	{
+		$this->render();
+	}
+
+	protected function render()
+	{
+		echo (new View())->render('views/layouts/future-theme/index');
+	}
+}

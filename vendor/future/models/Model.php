@@ -8,9 +8,11 @@
 
 namespace future\models;
 
+use future\models\db\DB;
+
 /**
  * Class Model
  * @package future\models
  */
-class Model
+class Model extends DB
 {}
