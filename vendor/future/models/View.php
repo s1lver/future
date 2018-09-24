@@ -37,6 +37,7 @@ class View
 		ob_implicit_flush(false);
 		extract($params, EXTR_OVERWRITE);
 
+		/** @noinspection PhpIncludeInspection */
 		require $file.'.php';
 
 		return ob_get_clean();
