@@ -27,7 +27,7 @@ class Autoload
 	 *
 	 * @return bool
 	 */
-	public function add($namespace, $rootDir)
+	public function add($namespace, $rootDir): bool
 	{
 		if (is_dir($rootDir)) {
 			$this->namespace = $namespace;
@@ -42,7 +42,7 @@ class Autoload
 	/**
 	 * Функция регистрации автозагрузки классов
 	 */
-	public function register()
+	public function register(): void
 	{
 		spl_autoload_register([$this, 'autoloadNamespace']);
 	}
@@ -53,7 +53,7 @@ class Autoload
 	 * @param string $class
 	 * @return bool
 	 */
-	protected function autoloadNamespace($class)
+	protected function autoloadNamespace($class): bool
 	{
 		$pathParts = explode('\\', $class);
 

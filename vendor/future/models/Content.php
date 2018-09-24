@@ -24,7 +24,7 @@ class Content extends Model
 		$this->render();
 	}
 
-	protected function render()
+	protected function render(): void
 	{
 		echo (new View())->render('views/layouts/future-theme/index');
 	}
