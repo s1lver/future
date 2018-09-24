@@ -57,7 +57,7 @@ class Autoload
 	{
 		$pathParts = explode('\\', $class);
 
-		if (is_array($pathParts)) {
+		if (\is_array($pathParts)) {
 			array_shift($pathParts);
 			$filePath = $this->namespacesMap[$this->namespace].DIRECTORY_SEPARATOR.implode(DIRECTORY_SEPARATOR, $pathParts).'.php';
 
